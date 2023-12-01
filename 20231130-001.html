@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>가상요소</title>
+    <style>
+        p {
+            width: 300px;
+            height: 250px;
+            border: 2px solid #000;
+            padding: 25px;
+            box-sizing: border-box;
+        }
+
+        p:before {
+            content:"앞부분에 콘텐츠 삽입";
+            display: block;
+            width: 500px;
+            height: 3px;
+            background: red;
+            clear: both;
+            color: red;
+        }
+
+        p:after {
+            content:"뒷부분에 콘텐츠 삽입";
+            display: block;
+            width: 150px;
+            height: 80px;
+            background: red;
+            clear: both;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis libero officiis autem odio ratione. Eveniet tempora, quos consequuntur iste eaque eligendi officia ratione ab eius nemo blanditiis aut voluptas ipsam?
+    </p>
+</body>
+</html>
